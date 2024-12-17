@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/description"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Profile">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="302dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/homeTop"
+        app:layout_constraintEnd_toEndOf="@id/homeTop"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@id/homeTop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/homeTop"
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/hProfile"
+        android:layout_width="111dp"
+        android:layout_height="81dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/profilephoto" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="220dp"
+        android:text="@string/Name"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <TextView
+        android:id="@+id/walk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/walk"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="56dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/newCollec"
+        android:layout_width="251dp"
+        android:layout_height="60dp"
+        android:text="@string/newCollec"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="387dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newCollec"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/btnAll"
+            android:layout_width="50dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/btnAll"
+            android:text="@string/btnAll"
+            android:textColor="#050505"
+            android:textColorLink="#EFEFEF" />
+
+        <Button
+            android:id="@+id/btnNike"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/btnNike"
+            android:text="@string/btnNike"
+            android:textColor="#050505"
+            android:textColorLink="#0D0D0D" />
+
+        <Button
+            android:id="@+id/btnAdidas"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/btnAdidas"
+            android:text="@string/btnAdidas"
+            android:textColor="#0D0C0C" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/bottom_background"
+        app:layout_constraintTop_toBottomOf="@id/scroll1"
+        tools:ignore="VisualLintBottomNav"
+        tools:layout_editor_absoluteX="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:contentDescription="home"
+                android:focusable="true"
+                android:src="@drawable/home1"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/tips"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:contentDescription="cart"
+                android:focusable="true"
+                android:src="@drawable/cart2"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/goal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:contentDescription="heart"
+                android:focusable="true"
+                android:src="@drawable/fav"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:contentDescription="account"
+                android:focusable="true"
+                android:src="@drawable/account"
+                tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="411dp"
+        android:layout_height="286dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/shoeselect"
+            android:layout_width="387dp"
+            android:layout_height="260dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="363dp">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="245dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="-70dp"
+                app:srcCompat="@drawable/shoe1"
+                tools:layout_editor_absoluteY="301dp" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="216dp"
+                android:layout_height="250dp"
+                android:layout_marginBottom="108dp"
+                app:srcCompat="@drawable/shoe2" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="216dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="-70dp"
+                app:srcCompat="@drawable/shoe3"
+                tools:layout_editor_absoluteY="301dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">StepUp</string>
+    <string name="welcome_message">HI RUVINDA!</string>
+    <string name="Name">HI RUVINDA</string>
+    <string name="walk">Walk In The Latest Trends With Us</string>
+    <string name="newCollec">NEW COLLECTION\n</string>
+    <string name="btnAll">All\n</string>
+    <string name="btnNike">Nike</string>
+    <string name="btnAdidas">Adidas</string>
+    <string name="btnPay">To Pay</string>
+    <string name="textb">Nike Air Force</string>
+    <string name="textShoe1">Nike W Air Max 90\n\nLKR 282800.00</string>
+    <string name="shoe_name">Nike W Air Max90\n</string>
+    <string name="shoe_price">LKR 22000.00</string>
+    <string name="cart">Shopping Cart</string>
+    <string name="textView">Hiiiii Amasha</string>
+</resources>
